@@ -1,6 +1,6 @@
 sidebar:
     position: left
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
@@ -41,81 +41,77 @@ sidebar:
     interests:
       title: Interests
       info:
-        - item: Kitesurfing
-          link:
+        - item: Kitesurfing, crossfit
 
-        - item: Crossfit / Cycling
-          link:
+        - item: Traveling
 
-        # - item: Programming
-        #   link: https://github.com/annelohmeijer
+        - item: Coding / technology
 
 career-profile:
     title: 
     summary: |
-      Welcome! I'm an Amsterdam based software engineer with 
+      Hi! My name is Anne Lohmeijer. I'm a data / platform / DevOps / software engineer with 
       a background in particle physics.
 
-      I have over 6 years of experience in the data 
-      and ML realm. I'm skilled in API development (FastAPI), Infrastructure as code (Terraform),
-      CICD, DevOps, distributed computing (Spark), containerisation (Docker, K8s), cloud computing.
+      I have 6+ years of experience in the data and ML realm, across multiple industries. Key strengths: 
+      software and API development, CICD, DevOps, distributed computing, containerisation, Infrastructure as code, cloud computing.
 
 experiences:
     title: Experiences
     info:
-      - role: Software Engineer
-        company: Little Lions Child Coaching
-        location: Amsterdam / Cape Town (South Africa)
-        time: March 2024 - Present
-        details: |
-          [Little Lions Child Coaching](https://littlelionschildcoaching.com) is a Cape Town-based NGO that provides mental 
-          health workshops to children in townships in Africa (South Africa, Kenya). 
-          I started Digital Lions: a private web app that enables local staff to provide 
-          and gather insights in attendance data. Within nine months we went from scratch
-          to a multi environment, live application: [app.littlelionschildcoaching.com](https://app.littlelionschildcoaching.com). 
-
-          - Setup a [Github organization with repository](https://github.com/Little-Lions) 
-          - System design: designed and built the database, API, user management, RBAC.
-          - DevOps: containerisation (Docker), CICD, networking (domain administration), security
-          
       - role: Platform Engineer
         time: Nov 2023 - Present
         company: Ahold Delhaize
         details: |
-          Building the API that manages user access for data on the advanced analytics data platform.
+          Data platform engineer in one of the platform teams that maintain the advanced analytics data platform. 
+          Shared responsibilities:
+          - build the API that manages user access for data on the advanced analytics data platform 
+          - build a paved road for integrating data from Confluent Kafka to the platform
+          - maintain Unity Catalog 
+          - operational duties
 
-          Tech stack: Azure, Databricks, Unity Catalog, Python FastAPI, Terraform, Github, Docker.
+          Tech stack: Python (FastAPI), Azure, Databricks, Unity Catalog, 
+          Terraform, Github, Docker.
 
       - role: Platform Engineer
         time: Jan 2023 - Nov 2023
         company: ABN AMRO, Amsterdam
         details: |
-          Part of the platform enablement team that provides the Azure infrastructure 
-          for multiple applications using a modular Terraform setup. Played a key role 
-          in setting up the Azure cloud infrastructure to enable implementation of 
-          OpenAI's ChatGPT.
+          Platform engineer in the enablement team of Strategy & Innovation, which provides engineering teams with the infra required for their application.
+
+          - Key player in setting up the Azure cloud infrastructure for implementation of OpenAI's ChatGPT within the bank. Within 6 weeks went from start to multi-stage, scalable application. 
+          - On a daily basis responsible for setting up infra for applications: storage, compute, networking, monitoring, governance, DevOps, CI/CD. 
+
+
+          Tools: Terraform, Docker, Gitlab, Kubernetes, Azure, AWS.
 
       - role: Machine Learning Engineer
         time: Sep 2019 - Jan 2023 
         company: ABN AMRO, Amsterdam
         details: |
-          Started as a data science trainee but soon transitioned into ML engineering.
-          Operationalised multiple ML (and non-ML) usecases on the banks ML platform:
-          - email classification/routing
-          - named entity recognition
-          - outlier detection for foreign exchange trades
-          - large scale (> 5TB) document classification
-          - lead generation for commercial banking
-          - outlier detection for transaction monitoring
+          Projects 
+          - Played a key role in productionizing the first advanced analytics use case on the data science production platform (K8s cluster) of the bank: a highly scalable emailclassifier that has been deployed to several departments with Operations. Responsible for the MLE part of the models in production. 
+          - Developed and published several internal NLP modules to handle and process text data.
+          - Responsible for the technical effort of productionizing a transaction alert model in the Detecting Financial Crime department.
+          - Leading the technical effort of productionizing a document classifier at scale. Classified over 3 million documents / more than 5TB of data in batch mode. This helped ABN AMRO complying to ECB regulations.
+          - Lead generation project based on automatic detection of credit needs. Resulted in over 10M euros in loans.
+          - Co-leading the team in becoming technically mature (coding standards, best practices, ways of working, etc.)
+          - Active role in the MLOps community within the bank.
+          - Mentoring several juniors in the team. 
 
-          Tech stack: Azure, Databricks, Docker, Python, Spark, MLflow, Azure DevOps.
+          Concepts: CICD, MLOps, IaC, containerisation.  
+
+          Tools: Spark, Python, Azure, MLflow, Databricks, Terraform, Gitlab, Kubernetes.
 
       - role: Python Developer
         time: Nov 2018 - Aug 2019
         company: GUTS Tickets
         details: |
           GUTS Tickets is a ticketing company that provides event ticketing on the blockchain.
-          Data analysis and Python development. Started as a part-time job next to my studies and continued as full-time job.
+          My responsibilities consisted of data analysis and Python development on a Raspberry Pi. 
+          Started as a part-time job next to my studies and continued as full-time job.
+
+          Tech stack: Python, Docker, Gitlab.
 
       - role: Analyst
         time: Jun 2016 - Aug 2017
@@ -135,12 +131,8 @@ certifications:
           credentialurl: 
           credentialname: 
           details: |
-            Modules covered:
-              - Numerical algorithms
-              - Information theory
-              - Agent-based modeling
-              - Scientific visualization
-              - Computational finance
+            Focus areas: numerical algorithms, information theory,
+            agent-based modelling, scientific visualization, computational finance.
 
         - name: Smart Contract Engineering
           start: 2022
@@ -152,7 +144,8 @@ certifications:
           details: |
             Intensive (30 hrs/week), technical 10-week bootcamp focused on smart contract engineering and Web3 topics:
               - Solidity, Ethereum Virtual Machine (EVM), and dApp development
-              - Advanced concepts like opcodes, liquidity pools, and bytecode compilation
+              - Advanced concepts like opcodes, liquidity pools, and bytecode compilation.
+            
             Capstone project: [Bricks on GitHub](https://github.com/guyonmatteau/Bricks)
 
         - name: MSc in Particle Physics
@@ -163,12 +156,11 @@ certifications:
           credentialurl: 
           credentialname: 
           details: |
-            Modules covered:
-              - Neural networks
-              - Quantum field theory
-              - Elementary particle physics
-              - Advanced cosmology
-            Master’s thesis: Monte Carlo analysis on particle decay within CERN’s LHCb group in Barcelona
+            Modules: neural networks, quantum field theory, elementary particle physics, advanced
+            cosmology.
+
+            Master thesis in Monte Carlo analysis on specific particle decay in CERN’s LHCb group. 
+
 
         - name: BSc in Physics and Astronomy
           start: 2011
@@ -177,30 +169,29 @@ certifications:
           credentialid: 
           credentialurl: 
           credentialname: 
-          details: |
-            Activities and achievements:
-              - Member of the board of association VIVAT, responsible for financial daily operations (annual budget €140K)
-              - One year of rowing crew at ASR Nereus
+          details: 
 
 projects:
     title: Projects
-    intro: >
-      Since university I have been enthousiastic about programming.
-
+    intro:
     info:
-      - role: Software Engineer
-        company: Little Lions Child Coaching
+      - role: Digital Lions
+        company: Little Lions Child Coaching - Cape Town (South Africa)
         location: Amsterdam / Cape Town (South Africa)
         time: March 2024 - Present
         details: |
           [Little Lions Child Coaching](https://littlelionschildcoaching.com) is a Cape Town-based NGO that provides mental 
-          health workshops to children in townships in Africa (South Africa, Kenya). 
+          health workshops to children in townships in South Africa and Kenya. 
           I started Digital Lions: a private web app that enables local staff to provide 
           and gather insights in attendance data. Within nine months we went from scratch
-          to a multi environment, live application: [app.littlelionschildcoaching.com](https://app.littlelionschildcoaching.com). 
+          to a live application ([app.littlelionschildcoaching.com](https://app.littlelionschildcoaching.com)), 
+          with multiple environments. To date, I have spent roughly 300 hours on this.
 
-          - Setup a [Github organization with repository](https://github.com/Little-Lions) 
-          - System design: designed and built the database, API, user management, RBAC.
+          - Public code: [Github organization with repository](https://github.com/Little-Lions) 
+          - System design and implementation
+            - database (Postgres)
+            - API (FastAPI) 
+            - user management, RBAC (OAuth with Auth0).
           - DevOps: containerisation (Docker), CICD, networking (domain administration), security
 
     # assignments:
@@ -209,49 +200,45 @@ projects:
     #     tagline: "A responsive website template designed to help startups promote, market and sell their products."
 
 
-publications:
-    title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
-    papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+# publications:
+#     title: Publications
+#     intro: |
+#       You can list your publications in this section. Lorem ipsum dolor sit
+#       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#       bibendum fringilla a eu lectus.
+#     papers:
+#       - title: The Art of Computer Programming
+#         link: "#"
+#         authors: Donald E. Knuth
+#         conference: Addison-Wesley, 1968
+#
+#       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#         link: "#"
+#         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+#
+#       - title: A syntax directed compiler for Algol 60
+#         link: "#"
+#         authors: Edgar T. Irons
+#         conference: "Comm. ACM 4 (1961), 51–55"
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
-
-skills:
-    title: Skills &amp; Proficiency
-
-    toolset:
-      - name: Python & Django
-        level: 98%
-
-      - name: Javascript & jQuery
-        level: 98%
-
-      - name: Angular
-        level: 98%
-
-      - name: HTML5 & CSS
-        level: 95%
-
-      - name: Ruby on Rails
-        level: 85%
-
-      - name: Sketch & Photoshop
-        level: 60%
-
-footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+# skills:
+#     title: Skills &amp; Proficiency
+#
+#     toolset:
+#       - name: Software engineering (Python)
+#         level: 90%
+#
+#       - name: CICD / DevOps
+#         level: 80%
+#
+#       - name: Docker
+#         level: 85%
+#
+#       - name: Distributed computing (Spark / Databricks)
+#         level: 90%
+#
+#       - name: Terraform / Terragrunt
+#         level: 65%
+#
+footer:
